@@ -15,7 +15,13 @@ import java.util.Optional;
 public class CourseController {
 	@Autowired
 	CourseRepository repo;
-	
+
+	@GetMapping("/hola")
+	public String index(){
+
+		return "Hello from Azure Deployment demo-curso-jpa!!!!";
+	}
+
 	@GetMapping
 	public List<Course> getCourses() {
 		return repo.findAll();
