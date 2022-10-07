@@ -21,7 +21,6 @@ public class CourseController {
 
 		return "Hello from Azure Deployment demo-curso-jpa!!!!";
 	}
-
 	@GetMapping
 	public List<Course> getCourses() {
 		return repo.findAll();
