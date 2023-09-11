@@ -18,12 +18,12 @@ public class ConsumerKafka {
      *
      * @param consumerRecord
      * @throws IOException
-     */
+     
     @KafkaListener(topics = "${spring.kafka.topic.consumer}", groupId = "myGroup", autoStartup = "true")
     public void onMessage(ConsumerRecord<String, String> consumerRecord) {
     		
     		log.info("Request in key :: " + consumerRecord.key());
     		log.info("Request in value :: " + consumerRecord.value());
-    }
+    }*/
 
 }
