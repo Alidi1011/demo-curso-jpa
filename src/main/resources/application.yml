@@ -3,5 +3,5 @@ spring:
     name: demo-curso-jpa
 
 server:
-  port: 8082
+  port: 8088
 
